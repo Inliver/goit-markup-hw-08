@@ -1,0 +1,138 @@
+.portfolio-filter {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+
+
+    & li:not(:last-child) {
+       margin-right: 8px;
+}}
+
+.portfolio-filter input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+
+
+
+    &:checked+label,
+    &:hover+label,
+    &:focus+label {
+        background-color: #2196f3;
+        color: #ffffff;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+}}
+
+.portfolio-filter label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+
+
+
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    box-shadow: none;
+    background-color: #f5f4fa;
+    transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1),
+        250ms color cubic-bezier(0.4, 0, 0.2, 1),
+        250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.portfolio-item li {
+    width: 370px;
+    margin: 15px;
+    box-shadow: none;
+    transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+    &:hover .overlay {
+    top: 0;
+}
+}
+
+
+
+.portfolio-item li>div {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item .portfolio-item--title {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    display: flex;
+    padding-right: 24px;
+    padding-left: 24px;
+    align-items: center;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #ffffff;
+    transition: 250ms top cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item .overlay p {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.portfolio-item li:hover .overlay {
+    top: 0;
+}
+
+.portfolio-item h2 {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    text-align: left;
+}
+
+.portfolio-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+}

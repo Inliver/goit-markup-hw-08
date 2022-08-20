@@ -1,0 +1,30 @@
+//utls styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+
+//base styles
+@import './base/base';
+@import './base/reset';
+
+//components styles
+@import './сomponents/section';
+@import './сomponents/conteiner';
+@import './сomponents/icon';
+@import './сomponents/service-form';
+@import './сomponents/social-list';
+@import './сomponents/subscribe-form';
+@import './сomponents/logo';
+
+
+//layout styles
+@import './layout/header';
+@import './layout/hero';
+@import './layout/nav';
+@import './layout/advantage';
+@import './layout/works';
+@import './layout/team';
+@import './layout/backdrop';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';

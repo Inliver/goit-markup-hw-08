@@ -1,0 +1,50 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__conteiner {
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+}
+
+.heder__logo {
+    color: #000000;
+}
+
+
+.header__contacts-block {
+    margin-left: auto;
+}
+
+.header__icon {
+    margin-right: 10px;
+}
+
+.header__contact:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+    text-decoration: none;
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+    color: var(--focus-link-color);
+}}
+
+.icon-envelope {
+    width: 1.3330078125em;
+}
+
+.icon-smartphone {
+    width: 0.625em;
+}
