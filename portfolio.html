@@ -42,13 +42,13 @@
         <div class="header__contacts-block">
           <a href="mailto:info@devstudio.com" class="header__contact">
             <svg class="header__icon icon icon-envelope">
-              <use xlink:href="./imges/icon.svg#icon-envelope"></use>
+              <use xlink:href="./images/icon.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a
           >
           <a href="tel:+380961111111" class="header__contact">
             <svg class="header__icon icon icon-smartphone">
-              <use xlink:href="./imges/icon.svg#icon-smartphone"></use>
+              <use xlink:href="./images/icon.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a
           >
@@ -109,16 +109,74 @@
           <ul class="list portfolio-item">
             <li>
               <div>
-                <img
-                  src="./imges/tehnokriak.jpg"
+                <!-- <img
+                  src="./images/tehnokriak.jpg"
                   alt="Сйт Технокряк"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card1_lg.webp    1x,
+                      ./images/portfolio/card1_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card1_lg.jpeg    1x,
+                      ./images/portfolio/card1_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card1_md.webp    1x,
+                      ./images/portfolio/card1_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card1_md.jpeg    1x,
+                      ./images/portfolio/card1_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card1_sm.webp    1x,
+                      ./images/portfolio/card1_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card1_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card1_sm.jpg"
+                    alt="Веб-сайт"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -130,16 +188,74 @@
             </li>
             <li>
               <div>
-                <img
-                  src="./imges/poster.jpg"
+                <!-- <img
+                  src="./images/poster.jpg"
                   alt="красочный постер"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card2_lg.webp    1x,
+                      ./images/portfolio/card2_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card2_lg.jpeg    1x,
+                      ./images/portfolio/card2_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card2_md.webp    1x,
+                      ./images/portfolio/card2_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card2_md.jpeg    1x,
+                      ./images/portfolio/card2_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card2_sm.webp    1x,
+                      ./images/portfolio/card2_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card2_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card2_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -150,16 +266,74 @@
             </li>
             <li>
               <div>
-                <img
-                  src="./imges/restoran.jpg"
+                <!-- <img
+                  src="./images/restoran.jpg"
                   alt="логотип ресторана"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card3_lg.webp    1x,
+                      ./images/portfolio/card3_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card3_lg.jpeg    1x,
+                      ./images/portfolio/card3_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card3_md.webp    1x,
+                      ./images/portfolio/card3_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card3_md.jpeg    1x,
+                      ./images/portfolio/card3_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card3_sm.webp    1x,
+                      ./images/portfolio/card3_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card3_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card3_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -171,16 +345,74 @@
             </li>
             <li>
               <div>
-                <img
-                  src="./imges/projectprime.jpg"
+                <!-- <img
+                  src="./images/projectprime.jpg"
                   alt="компьютерная переферия"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card4_lg.webp    1x,
+                      ./images/portfolio/card4_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card4_lg.jpeg    1x,
+                      ./images/portfolio/card4_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card4_md.webp    1x,
+                      ./images/portfolio/card4_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card4_md.jpeg    1x,
+                      ./images/portfolio/card4_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card4_sm.webp    1x,
+                      ./images/portfolio/card4_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card4_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card4_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -192,16 +424,74 @@
             </li>
             <li>
               <div>
-                <img
-                  src="./imges/projectbox.jpg"
+                <!-- <img
+                  src="./images/projectbox.jpg"
                   alt="фирмерные коробки"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card5_lg.webp    1x,
+                      ./images/portfolio/card5_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card5_lg.jpeg    1x,
+                      ./images/portfolio/card5_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card5_md.webp    1x,
+                      ./images/portfolio/card5_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card5_md.jpeg    1x,
+                      ./images/portfolio/card5_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card5_sm.webp    1x,
+                      ./images/portfolio/card5_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card5_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card5_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -213,16 +503,74 @@
             </li>
             <li>
               <div>
-                <img
-                  src="./imges/inspiration.jpg"
+                <!-- <img
+                  src="./images/inspiration.jpg"
                   alt="целеустремленность"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card6_lg.webp    1x,
+                      ./images/portfolio/card6_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card6_lg.jpeg    1x,
+                      ./images/portfolio/card6_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card6_md.webp    1x,
+                      ./images/portfolio/card6_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card6_md.jpeg    1x,
+                      ./images/portfolio/card6_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card6_sm.webp    1x,
+                      ./images/portfolio/card6_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card6_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card6_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -233,12 +581,70 @@
             </li>
             <li>
               <div>
-                <img src="./imges/izdanie.jpg" alt="литература" width="370" />
+                <!-- <img src="./images/izdanie.jpg" alt="литература" width="370" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card7_lg.webp    1x,
+                      ./images/portfolio/card7_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card7_lg.jpeg    1x,
+                      ./images/portfolio/card7_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card7_md.webp    1x,
+                      ./images/portfolio/card7_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card7_md.jpeg    1x,
+                      ./images/portfolio/card7_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card7_sm.webp    1x,
+                      ./images/portfolio/card7_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card7_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card7_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -250,16 +656,74 @@
             </li>
             <li>
               <div>
-                <img
-                  src="./imges/projectlab.jpg"
+                <!-- <img
+                  src="./images/projectlab.jpg"
                   alt="Лаборатория"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card8_lg.webp    1x,
+                      ./images/portfolio/card8_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card8_lg.jpeg    1x,
+                      ./images/portfolio/card8_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card8_md.webp    1x,
+                      ./images/portfolio/card8_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card8_md.jpeg    1x,
+                      ./images/portfolio/card8_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card8_sm.webp    1x,
+                      ./images/portfolio/card8_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card8_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card8_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -271,12 +735,70 @@
             </li>
             <li>
               <div>
-                <img src="./imges/growing.jpg" alt="Развитие" width="370" />
+                <!-- <img src="./images/growing.jpg" alt="Развитие" width="370" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/card9_lg.webp    1x,
+                      ./images/portfolio/card9_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card9_lg.jpeg    1x,
+                      ./images/portfolio/card9_lg@2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card9_md.webp    1x,
+                      ./images/portfolio/card9_md@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card9_md.jpeg    1x,
+                      ./images/portfolio/card9_md@2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio/card9_sm.webp    1x,
+                      ./images/portfolio/card9_sm@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/portfolio/card9_sm@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/portfolio/card9_sm.jpg"
+                    alt="постер команды"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения  о компании или частном лице.
+                    исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
@@ -334,7 +856,7 @@
                   rel="noopener noreferrer"
                 >
                   <svg class="social__icon icon icon-instagram">
-                    <use xlink:href="./imges/icon.svg#icon-instagram"></use>
+                    <use xlink:href="./images/icon.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -345,7 +867,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   ><svg class="social__icon icon icon-twitter">
-                    <use xlink:href="./imges/icon.svg#icon-twitter"></use>
+                    <use xlink:href="./images/icon.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -356,7 +878,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   ><svg class="social__icon icon icon-facebook">
-                    <use xlink:href="./imges/icon.svg#icon-facebook"></use>
+                    <use xlink:href="./images/icon.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -367,7 +889,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   ><svg class="social__icon icon icon-linkedin">
-                    <use xlink:href="./imges/icon.svg#icon-linkedin"></use>
+                    <use xlink:href="./images/icon.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -382,7 +904,7 @@
             <button type="submit" class="subscribe-btn">
               <span class="subscribe-btn-titel">Подписаться</span>
               <svg class="icon icon-send">
-                <use xlink:href="./imges/icon.svg#icon-send"></use>
+                <use xlink:href="./images/icon.svg#icon-send"></use>
               </svg>
             </button>
           </div>

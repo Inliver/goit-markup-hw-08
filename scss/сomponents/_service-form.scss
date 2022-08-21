@@ -17,6 +17,19 @@
     color: #000000;
 }
 
+.sevice-form__label:hover .input-group__icon,
+.input-group__field:focus+.input-group__icon {
+    color: #2196f3;
+    cursor: pointer;
+}
+
+
+// .sevice-form__:hover .input-group__icon,
+// .sevice-form__:focus .input-group__icon {
+//     color: #2196f3;
+//     cursor: pointer;
+// }
+
 .input-group__title {
     margin-bottom: 4px;
 }
@@ -37,8 +50,7 @@
     &:hover,
     &:focus {
      border-color: #2196f3;
-}
-
+     cursor: pointer;}
 
     &:focus-visible {
      outline: none;
@@ -82,6 +94,11 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
+
+
+    &:hover,
+    &:focus {
+        cursor: pointer;}
 }
 
 .sevice-form__checkbox {
@@ -91,10 +108,17 @@
     align-items: center;
     margin-bottom: 30px;
 
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
     cursor: pointer;
+
+    
+        @media screen and(min-width: 1200px) {
+            font-size: 14px;
+            line-height: calc(24/14);
+            letter-spacing: 0.03em;
+        }
 }
 
 .sevice-form-link {

@@ -1,30 +1,62 @@
-.hero {
-    position: relative;
-    padding-top: 200px;
-    padding-left: 0;
-    padding-bottom: 200px;
-    padding-right: 0;
-    background-color: rgba(47, 48, 58, 0.4);
-}
 
-.hero__img {
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    position: absolute;
-    z-index: -1;
+.hero {
+
+    max-width: 1600px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: rgba(47, 48, 58, 0.4);
+    text-align: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+@media screen and (min-width: 768px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        min-height: 600px;
+    }
+
+@media screen and(max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('./images/header_sm.png');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url('../images/header_sm.webp') 1x);
+    @include mq(retina) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.../images/header_sm@2x.png');
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            -webkit-image-set(url('../images/header_sm@2x.webp') 2x);
+    }
+}
+@include mq(tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header_md.png');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url('../images/header_md.webp') 1x);
+    @include mq(retina) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header_md@2x.png');
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            -webkit-image-set(url('../images/header_md@2x.webp') 2x);
+    }
+    
+}
 }
 
 .hero__title {
-    margin-bottom: 30px;
+    max-width: 360px;
+    margin: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    text-align: center;
+    font-size: 26px;
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: calc(60/40);
 }
+}
+
 
 .hero__btn {
     padding-top: 10px;

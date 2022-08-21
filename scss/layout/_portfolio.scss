@@ -1,12 +1,16 @@
 .portfolio-filter {
-    justify-content: center;
+    // justify-content: center;
     display: flex;
     margin-bottom: 50px;
+    column-gap: 8px;
+    row-gap: 15px;
+    flex-wrap: wrap;
 
 
-    & li:not(:last-child) {
-       margin-right: 8px;
-}}
+//     & li:not(:last-child) {
+//        margin-right: 8px;
+// }
+}
 
 .portfolio-filter input[type="radio"] {
     position: absolute;
@@ -57,12 +61,20 @@
 .portfolio-item {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-}
+    gap: 30px;
 
 .portfolio-item li {
-    width: 370px;
-    margin: 15px;
+    display: flex;
+    width: 100%;
+    
+    @media screen and(min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and(min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+
     box-shadow: none;
     transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -75,7 +87,7 @@
     &:hover .overlay {
     top: 0;
 }
-}
+}}
 
 
 

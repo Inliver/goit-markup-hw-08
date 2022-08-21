@@ -28,6 +28,25 @@
         <a href="./index.html" class="logo heder__logo"
           ><span class="logo__text logo__text--blue">Web</span>Studio</a
         >
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="кнопка меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon">
+            <use
+              class="menu-btn__icon-open"
+              href="./images/icon/icon.svg#icon-menu_open"
+            ></use>
+            <use
+              class="menu-btn__icon-close"
+              href="./images/icon/icon.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -42,13 +61,13 @@
         <div class="header__contacts-block">
           <a href="mailto:info@devstudio.com" class="header__contact">
             <svg class="header__icon icon icon-envelope">
-              <use xlink:href="./imges/icon.svg#icon-envelope"></use>
+              <use xlink:href="./images/icon/icon.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a
           >
           <a href="tel:+380961111111" class="header__contact">
             <svg class="header__icon icon icon-smartphone">
-              <use xlink:href="./imges/icon.svg#icon-smartphone"></use>
+              <use xlink:href="./images/icon/icon.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a
           >
@@ -59,7 +78,6 @@
     <main>
       <section class="section hero">
         <div class="conteiner">
-          <img src="./imges/hero.jpg" alt="our team" class="hero__img" />
           <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -72,7 +90,7 @@
           <div class="modal">
             <button class="modal__btn" data-modal-close>
               <svg class="icon icon-vector">
-                <use xlink:href="./imges/vector.svg#icon-vector"></use>
+                <use xlink:href="./images/icon/vector.svg#icon-vector"></use>
               </svg>
             </button>
             <h2 class="modal__title section-title">
@@ -84,21 +102,21 @@
                   <span class="input-group__title">Имя</span>
                   <input type="text" name="name" class="input-group__field" />
                   <svg class="icon icon-person input-group__icon">
-                    <use xlink:href="./imges/icon.svg#icon-person"></use>
+                    <use xlink:href="./images/icon/icon.svg#icon-person"></use>
                   </svg>
                 </label>
                 <label class="sevice-form__label">
                   <span class="input-group__title">Телефон</span>
                   <input type="tel" name="tel" class="input-group__field" />
                   <svg class="icon icon-phone input-group__icon">
-                    <use xlink:href="./imges/icon.svg#icon-phone"></use>
+                    <use xlink:href="./images/icon/icon.svg#icon-phone"></use>
                   </svg>
                 </label>
                 <label class="sevice-form__label">
                   <span class="input-group__title">Почта</span>
                   <input type="email" name="mail" class="input-group__field" />
                   <svg class="icon icon-email input-group__icon">
-                    <use xlink:href="./imges/icon.svg#icon-email"></use>
+                    <use xlink:href="./images/icon/icon.svg#icon-email"></use>
                   </svg>
                 </label>
                 <label class="sevice-form__label">
@@ -118,7 +136,7 @@
                   class="visually-hidden license-agry"
                 />
                 <svg class="icon icon-check">
-                  <use xlink:href="./imges/icon.svg#icon-check"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-check"></use>
                 </svg>
                 <span
                   >Соглашаюсь с рассылкой и принимаю
@@ -139,7 +157,7 @@
             <li class="advantage__item">
               <div class="advantage__case">
                 <svg class="advantage__icon icon icon-antenna">
-                  <use xlink:href="./imges/icon.svg#icon-antenna"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Внимание к деталям</h3>
@@ -151,7 +169,7 @@
             <li class="advantage__item">
               <div class="advantage__case">
                 <svg class="advantage__icon icon icon-clock">
-                  <use xlink:href="./imges/icon.svg#icon-clock"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Пунктуальность</h3>
@@ -163,7 +181,7 @@
             <li class="advantage__item">
               <div class="advantage__case">
                 <svg class="advantage__icon icon icon-diagram">
-                  <use xlink:href="./imges/icon.svg#icon-diagram"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Планирование</h3>
@@ -175,7 +193,7 @@
             <li class="advantage__item">
               <div class="advantage__case">
                 <svg class="advantage__icon icon icon-astronaut">
-                  <use xlink:href="./imges/icon.svg#icon-astronaut"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Современные технологии</h3>
@@ -192,24 +210,66 @@
           <h2 class="works__title section-title">Чем мы занимаемся</h2>
           <ul class="works__list list">
             <li class="works__item">
-              <img
-                src="./imges/codding.jpg"
+              <!-- <img
+                src="./images/codding.jpg"
                 alt="Валидный коддинг"
                 width="370"
                 height="294"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/works/desktops_lg.webp    1x,
+                    ./images/works/desktops_lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./images/works/desktops_lg@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/works/desktops_lg.jpg"
+                  alt="Валидный коддинг"
+                  width="370"
+                />
+              </picture>
               <div class="works__description-case">
                 <p class="works__description">Десктопные приложения</p>
               </div>
             </li>
             <li>
               <div class="works__item">
-                <img
-                  src="./imges/flex.jpg"
+                <!-- <img
+                  src="./images/flex.jpg"
                   alt="Кросплатформенные приложения"
                   width="370"
                   height="294"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works/mobiles_lg.webp    1x,
+                      ./images/works/mobiles_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="./images/works/mobiles_lg@2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/works/mobiles_lg.jpg"
+                    alt="телефон и ноутбук синхронизация телефона с ноутбуком"
+                    width="370"
+                  />
+                </picture>
                 <div class="works__description-case">
                   <p class="works__description">Мобильные приложения</p>
                 </div>
@@ -217,12 +277,34 @@
             </li>
             <li>
               <div class="works__item">
-                <img
-                  src="./imges/style.jpg"
+                <!-- <img
+                  src="./images/style.jpg"
                   alt="современная визуализация"
                   width="370"
                   height="294"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works/design_lg.webp    1x,
+                      ./images/works/design_lg@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="./images/works/design_lg@2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/works/design_lg.jpg"
+                    alt="современная визуализация"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="works__description-case">
                   <p class="works__description">Дизайнерские решения</p>
                 </div>
@@ -237,12 +319,70 @@
           <h2 class="section-title team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                src="./imges/igor.jpg"
+              <!-- <img
+                src="./images/igor.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/designer_lg.webp    1x,
+                    ./images/team/designer_lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/designer_lg.jpeg    1x,
+                    ./images/team/designer_lg@2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/designer_md.webp    1x,
+                    ./images/team/designer_md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/designer_md.jpeg    1x,
+                    ./images/team/designer_md@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/designer_sm.webp    1x,
+                    ./images/team/designer_sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/designer_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/designer_sm.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Игорь Демьяненко</h3>
                 <p class="worker__function">Product Designer</p>
@@ -257,7 +397,7 @@
                       >
                         <svg class="social__icon icon icon-instagram">
                           <use
-                            xlink:href="./imges/icon.svg#icon-instagram"
+                            xlink:href="./images/icon/icon.svg#icon-instagram"
                           ></use>
                         </svg>
                       </a>
@@ -269,7 +409,9 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-twitter">
-                          <use xlink:href="./imges/icon.svg#icon-twitter"></use>
+                          <use
+                            xlink:href="./images/icon/icon.svg#icon-twitter"
+                          ></use>
                         </svg>
                       </a>
                     </li>
@@ -281,7 +423,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-facebook">
                           <use
-                            xlink:href="./imges/icon.svg#icon-facebook"
+                            xlink:href="./images/icon/icon.svg#icon-facebook"
                           ></use>
                         </svg>
                       </a>
@@ -294,7 +436,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-linkedin">
                           <use
-                            xlink:href="./imges/icon.svg#icon-linkedin"
+                            xlink:href="./images/icon/icon.svg#icon-linkedin"
                           ></use>
                         </svg>
                       </a>
@@ -304,12 +446,70 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./imges/olga.jpg"
+              <!-- <img
+                src="./images/olga.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/frontend_lg.webp    1x,
+                    ./images/team/frontend_lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/frontend_lg.jpeg    1x,
+                    ./images/team/frontend_lg@2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/frontend_md.webp    1x,
+                    ./images/team/frontend_md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/frontend_md.jpeg    1x,
+                    ./images/team/frontend_md@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/frontend_sm.webp    1x,
+                    ./images/team/frontend_sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/frontend_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/frontend_sm.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Ольга Репина</h3>
                 <p class="worker__function">Frontend Developer</p>
@@ -324,7 +524,7 @@
                       >
                         <svg class="social__icon icon icon-instagram">
                           <use
-                            xlink:href="./imges/icon.svg#icon-instagram"
+                            xlink:href="./images/icon/icon.svg#icon-instagram"
                           ></use>
                         </svg>
                       </a>
@@ -336,7 +536,9 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-twitter">
-                          <use xlink:href="./imges/icon.svg#icon-twitter"></use>
+                          <use
+                            xlink:href="./images/icon/icon.svg#icon-twitter"
+                          ></use>
                         </svg>
                       </a>
                     </li>
@@ -348,7 +550,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-facebook">
                           <use
-                            xlink:href="./imges/icon.svg#icon-facebook"
+                            xlink:href="./images/icon/icon.svg#icon-facebook"
                           ></use>
                         </svg>
                       </a>
@@ -361,7 +563,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-linkedin">
                           <use
-                            xlink:href="./imges/icon.svg#icon-linkedin"
+                            xlink:href="./images/icon/icon.svg#icon-linkedin"
                           ></use>
                         </svg>
                       </a>
@@ -371,12 +573,69 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./imges/nikolay.jpg"
+              <!-- <img
+                src="./images/nikolay.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/marketing_lg.webp    1x,
+                    ./images/team/marketing_lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/marketing_lg.jpeg    1x,
+                    ./images/team/marketing_lg@2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/marketing_md.webp    1x,
+                    ./images/team/marketing_md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/marketing_md.jpeg    1x,
+                    ./images/team/marketing_md@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/marketing_sm.webp    1x,
+                    ./images/team/marketing_sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/marketing_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/marketing_sm.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Николай Тарасов</h3>
                 <p class="worker__function">Marketing</p>
@@ -391,7 +650,7 @@
                       >
                         <svg class="social__icon icon icon-instagram">
                           <use
-                            xlink:href="./imges/icon.svg#icon-instagram"
+                            xlink:href="./images/icon/icon.svg#icon-instagram"
                           ></use>
                         </svg>
                       </a>
@@ -403,7 +662,9 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-twitter">
-                          <use xlink:href="./imges/icon.svg#icon-twitter"></use>
+                          <use
+                            xlink:href="./images/icon/icon.svg#icon-twitter"
+                          ></use>
                         </svg>
                       </a>
                     </li>
@@ -415,7 +676,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-facebook">
                           <use
-                            xlink:href="./imges/icon.svg#icon-facebook"
+                            xlink:href="./images/icon/icon.svg#icon-facebook"
                           ></use>
                         </svg>
                       </a>
@@ -428,7 +689,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-linkedin">
                           <use
-                            xlink:href="./imges/icon.svg#icon-linkedin"
+                            xlink:href="./images/icon/icon.svg#icon-linkedin"
                           ></use>
                         </svg>
                       </a>
@@ -438,12 +699,71 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./imges/mihail.jpg"
+              <!-- <img
+                src="./images/mihail.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ui_lg.webp    1x,
+                    ./images/team/ui_lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/ui_lg.jpeg    1x,
+                    ./images/team/ui_lg@2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/ui_md.webp    1x,
+                    ./images/team/ui_md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/ui_md.jpeg    1x,
+                    ./images/team/ui_md@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/ui_sm.webp    1x,
+                    ./images/team/ui_sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/ui_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/ui_sm.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
+
               <div class="worker">
                 <h3 class="worker__title">Михаил Ермаков</h3>
                 <p class="worker__function">UI Designer</p>
@@ -458,7 +778,7 @@
                       >
                         <svg class="social__icon icon icon-instagram">
                           <use
-                            xlink:href="./imges/icon.svg#icon-instagram"
+                            xlink:href="./images/icon/icon.svg#icon-instagram"
                           ></use>
                         </svg>
                       </a>
@@ -470,7 +790,9 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-twitter">
-                          <use xlink:href="./imges/icon.svg#icon-twitter"></use>
+                          <use
+                            xlink:href="./images/icon/icon.svg#icon-twitter"
+                          ></use>
                         </svg>
                       </a>
                     </li>
@@ -482,7 +804,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-facebook">
                           <use
-                            xlink:href="./imges/icon.svg#icon-facebook"
+                            xlink:href="./images/icon/icon.svg#icon-facebook"
                           ></use>
                         </svg>
                       </a>
@@ -495,7 +817,7 @@
                         rel="noopener noreferrer"
                         ><svg class="social__icon icon icon-linkedin">
                           <use
-                            xlink:href="./imges/icon.svg#icon-linkedin"
+                            xlink:href="./images/icon/icon.svg#icon-linkedin"
                           ></use>
                         </svg>
                       </a>
@@ -520,7 +842,7 @@
               >
                 <div>
                   <svg class="clients__icon icon icon-ya">
-                    <use xlink:href="./imges/icon.svg#icon-ya"></use>
+                    <use xlink:href="./images/icon/icon.svg#icon-ya"></use>
                   </svg>
                 </div>
               </a>
@@ -532,7 +854,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="clients__icon icon icon-taglinehere">
-                  <use xlink:href="./imges/icon.svg#icon-taglinehere"></use>
+                  <use
+                    xlink:href="./images/icon/icon.svg#icon-taglinehere"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -543,7 +867,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="clients__icon icon icon-group2">
-                  <use xlink:href="./imges/icon.svg#icon-group2"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
@@ -554,7 +878,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="clients__icon icon icon-foster-peters">
-                  <use xlink:href="./imges/icon.svg#icon-foster-peters"></use>
+                  <use
+                    xlink:href="./images/icon/icon.svg#icon-foster-peters"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -565,7 +891,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="clients__icon icon icon-brand">
-                  <use xlink:href="./imges/icon.svg#icon-brand"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
@@ -577,7 +903,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="clients__icon icon icon-tagline">
-                  <use xlink:href="./imges/icon.svg#icon-tagline"></use>
+                  <use xlink:href="./images/icon/icon.svg#icon-tagline"></use>
                 </svg>
               </a>
             </li>
@@ -588,85 +914,95 @@
     <!--Footer-->
     <footer class="footer">
       <div class="conteiner footer__conteiner">
-        <div class="footer-contact-block">
-          <a href="./index.html" class="logo footer__logo"
-            ><span class="logo__text logo__text--blue">Web</span>Studio</a
-          >
-          <address>
-            <ul class="list">
-              <li>
-                <a
-                  href="https://goo.gl/maps/Edwmhxhsn8oZYqnP8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="gmaps"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li>
-                <a href="mailto:info@example.com" class="contact-footer"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380991111111" class="contact-footer"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+        <div class="footer-wrap">
+          <div class="footer-contact-block">
+            <a href="./index.html" class="logo footer__logo"
+              ><span class="logo__text logo__text--blue">Web</span>Studio</a
+            >
+            <address>
+              <ul class="list">
+                <li>
+                  <a
+                    href="https://goo.gl/maps/Edwmhxhsn8oZYqnP8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="gmaps"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@example.com" class="contact-footer"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380991111111" class="contact-footer"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
 
-        <div class="С">
-          <p class="footer__title title">Присоединяйтесь</p>
-          <div class="social">
-            <ul class="list social__list">
-              <li class="social__item">
-                <a
-                  class="social__link footer-soccial__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg class="social__icon icon icon-instagram">
-                    <use xlink:href="./imges/icon.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link footer-soccial__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><svg class="social__icon icon icon-twitter">
-                    <use xlink:href="./imges/icon.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link footer-soccial__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><svg class="social__icon icon icon-facebook">
-                    <use xlink:href="./imges/icon.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link footer-soccial__link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><svg class="social__icon icon icon-linkedin">
-                    <use xlink:href="./imges/icon.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="c">
+            <p class="footer__title title">Присоединяйтесь</p>
+            <div class="social">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a
+                    class="social__link footer-soccial__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="social__icon icon icon-instagram">
+                      <use
+                        xlink:href="./images/icon/icon.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link footer-soccial__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="social__icon icon icon-twitter">
+                      <use
+                        xlink:href="./images/icon/icon.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link footer-soccial__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="social__icon icon icon-facebook">
+                      <use
+                        xlink:href="./images/icon/icon.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link footer-soccial__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg class="social__icon icon icon-linkedin">
+                      <use
+                        xlink:href="./images/icon/icon.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -677,13 +1013,89 @@
             <button type="submit" class="subscribe-btn">
               <span class="subscribe-btn-titel">Подписаться</span>
               <svg class="icon icon-send">
-                <use xlink:href="./imges/icon.svg#icon-send"></use>
+                <use xlink:href="./images/icon/icon.svg#icon-send"></use>
               </svg>
             </button>
           </div>
         </form>
       </div>
     </footer>
+    <!-- Мобильное меню -->
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link active" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__grop">
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__phon" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="socials-mobile list">
+            <li class="socials-mobile__item">
+              <a
+                class="socials-mobile__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+
+            <li class="socials-mobile__item">
+              <a
+                class="socials-mobile__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+
+            <li class="socials-mobile__item">
+              <a
+                class="socials-mobile__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+
+            <li class="socials-mobile__item">
+              <a
+                class="socials-mobile__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu_mobile.js"></script>
   </body>
 </html>

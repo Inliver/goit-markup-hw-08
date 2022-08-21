@@ -1,11 +1,24 @@
 .header {
+    padding: 0;
     border-bottom: 1px solid #ececec;
+
+    @media screen and(min-wids: 768px) {
+        width: 768px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        justify-content: space-between;
+    }
 }
 
 .header__conteiner {
-    flex-direction: row;
+    display: flex;
     align-items: center;
-    height: 80px;
+    margin-left: auto;
+    position: relative;
+
+    @media screen and(max-width: 767px) {
+        justify-content: space-between;
+    }
 }
 
 .heder__logo {
@@ -15,6 +28,13 @@
 
 .header__contacts-block {
     margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .header__icon {
@@ -26,6 +46,8 @@
 }
 
 .header__contact {
+    display: flex;
+    align-items: center;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -39,7 +61,14 @@
     &:hover,
     &:focus {
     color: var(--focus-link-color);
-}}
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+}
+
 
 .icon-envelope {
     width: 1.3330078125em;
