@@ -44,7 +44,8 @@
 .active {
     color: var(--nav-item-active);
 
-
+@media screen and(min-width: 769px) {
+  
     &::after {
     position: absolute;
     display: flex;
@@ -54,4 +55,4 @@
     height: 4px;
     background-color: var(--nav-item-active);
     border-radius: 2px;
-}}
+}} }

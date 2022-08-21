@@ -32,6 +32,10 @@
     flex-wrap: wrap;
     align-items: center;
 
+    @media screen and (max-width: 1200px) {
+            margin-left: 80px;;
+        }
+        
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -42,7 +46,12 @@
 }
 
 .header__contact:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 0px;
+            margin-right: 50px;
+        }
 }
 
 .header__contact {
@@ -50,8 +59,8 @@
     align-items: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
     text-decoration: none;
@@ -66,6 +75,8 @@
     @media screen and (min-width: 1200px) {
       padding-top: 32px;
       padding-bottom: 32px;
+      font-size: 14px;
+      line-height: calc(16 / 14);
     }
 }
 
